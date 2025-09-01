@@ -1,5 +1,4 @@
 import { Metadata } from "next";
-
 import "@/app/ui/global.css";
 import { inter } from "@/app/ui/fonts";
 
