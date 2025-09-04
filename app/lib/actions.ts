@@ -6,6 +6,13 @@ import { redirect } from "next/navigation";
 import { signIn } from "@/auth";
 import { AuthError } from "next-auth";
 import postgres from "postgres";
+import { neon } from "@neondatabase/serverless";
+
+export async function getData() {
+  const sql = neon(process.env.DATABASE_URL!);
+  const data = await sql`...`;
+  return data;
+}
 
 const sql = postgres(process.env.POSTGRES_URL!, { ssl: "require" });
 
