@@ -38,6 +38,9 @@ importers:
       next-auth:
         specifier: 5.0.0-beta.29
         version: 5.0.0-beta.29(next@15.5.1-canary.17(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)
+      pg:
+        specifier: npm:@neondatabase/serverless@^1.0.0
+        version: '@neondatabase/serverless@1.0.1'
       postcss:
         specifier: 8.5.1
         version: 8.5.1
